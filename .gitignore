@@ -1,0 +1,15 @@
+.DS_Store
+/env
+/tmp
+/node_modules
+bower_components/
+dist/
+*.pyc
+*.sqlite
+*.mo
+*.pid
+.env
+.sass-cache/
+me.sublime-workspace
+.htpasswd
+*.pem

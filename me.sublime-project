@@ -1,0 +1,61 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"__pycache__",
+				".git",
+				".bower-cache",
+				".bower-registry",
+				".bower-tmp",
+				".coverage",
+               "__pycache__",
+				"public",
+				"node_modules",
+				"bower_components",
+				"dist",
+               "env"
+			],
+           "file_exclude_patterns":
+           [
+               ".coverage"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"django-nose-test":
+		{
+			"django-settings": "flatfox_website.settings.development",
+			"doted-notation": true,
+			"nose-options":
+			[
+				"--nocapture"
+			],
+			"python": "env/bin/python2.7",
+			"use-nose": false
+		},
+		"extra_paths":
+		[
+			"$VIRTUAL_ENV/lib/python2.7/site-packages/"
+		],
+		"python-interpereter": "$VIRTUAL_ENV/bin/python/"
+	},
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
